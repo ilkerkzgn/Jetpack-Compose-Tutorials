@@ -12,6 +12,7 @@ import androidx.compose.ui.res.stringResource
 import com.smarttoolfactory.tutorial1_1basics.R
 import com.smarttoolfactory.tutorial1_1basics.chapter1_basics.Tutorial1_1Screen
 import com.smarttoolfactory.tutorial1_1basics.chapter1_basics.Tutorial1_2Screen
+import com.smarttoolfactory.tutorial1_1basics.chapter1_basics.ilker.T1_1
 import com.smarttoolfactory.tutorial1_1basics.chapter2_material_widgets.*
 import com.smarttoolfactory.tutorial1_1basics.chapter3_layout.*
 import com.smarttoolfactory.tutorial1_1basics.chapter4_state.*
@@ -54,7 +55,7 @@ fun createComponentTutorialList(onBack: () -> Unit): List<TutorialSectionModel> 
     val tutorial1_1_i = TutorialSectionModel(
         title = stringResource(R.string.title1_1_i),
         action = {
-            Tutorial1_1Screen()
+            T1_1()
         },
         description = "İlker's Way to Create Rows, Columns and Box, how to add modifiers to " +
                 "composables. Set padding, margin, alignment other properties of composables.",
