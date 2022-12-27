@@ -23,6 +23,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.smarttoolfactory.tutorial1_1basics.model.TutorialSectionModel
+import com.smarttoolfactory.tutorial1_1basics.tutorial_list.TAG_ILKER
 
 @ExperimentalAnimationApi
 @Composable
@@ -34,7 +35,12 @@ fun TutorialSectionCard(
 ) {
     Card(
         elevation = 1.dp,
-        shape = RoundedCornerShape(8.dp)
+        shape = RoundedCornerShape(8.dp),
+        backgroundColor = if (model.tags.contains(TAG_ILKER)) {
+            Color.Yellow
+        } else {
+            MaterialTheme.colors.surface
+        }
     ) {
         Box(
             contentAlignment = Alignment.BottomStart

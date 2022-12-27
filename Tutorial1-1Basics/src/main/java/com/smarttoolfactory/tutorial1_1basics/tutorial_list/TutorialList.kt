@@ -51,6 +51,23 @@ fun createComponentTutorialList(onBack: () -> Unit): List<TutorialSectionModel> 
         )
     )
 
+    val tutorial1_1_i = TutorialSectionModel(
+        title = stringResource(R.string.title1_1_i),
+        action = {
+            Tutorial1_1Screen()
+        },
+        description = "İlker's Way to Create Rows, Columns and Box, how to add modifiers to " +
+                "composables. Set padding, margin, alignment other properties of composables.",
+        tags = listOf(
+            TAG_ILKER,
+            TAG_COMPOSE,
+            TAG_COMPOSE_COLUMN,
+            TAG_COMPOSE_ROW,
+            TAG_COMPOSE_BOX,
+            TAG_COMPOSE_MODIFIER
+        )
+    )
+
     val tutorial1_2 = TutorialSectionModel(
         title = stringResource(R.string.title1_2),
         description = "Create and modify Surface to draw background for Composables," +
@@ -477,6 +494,7 @@ fun createComponentTutorialList(onBack: () -> Unit): List<TutorialSectionModel> 
 
     return listOf(
         tutorial1_1,
+        tutorial1_1_i,
         tutorial1_2,
         tutorial2_1,
         tutorial2_2,

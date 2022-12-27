@@ -12,6 +12,7 @@ const val TAG_COMPOSE_BOX = "Box"
 const val TAG_COMPOSE_SURFACE = "Surface"
 const val TAG_COMPOSE_SHAPE = "Shape"
 const val TAG_COMPOSE_CLICKABLE = "Clickable"
+const val TAG_ILKER = "İlker"
 
 // Text
 const val TAG_TEXT = "Text"
